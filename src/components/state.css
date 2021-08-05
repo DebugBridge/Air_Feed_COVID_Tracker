@@ -1,0 +1,102 @@
+.state-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#red {
+    color: red;
+}
+#yellow {
+    color: orange;
+}
+#green {
+    color: green;
+}
+
+.state-subcontainer {
+    color: white;
+    min-width: 320px;
+    left: 0px;
+    top: 136px;
+}
+.stateWrapper{
+    background-color: #252525;
+}
+.state-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.stateTitle {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    min-width: 320px;
+    width: 550px;
+    padding-left: 20px;
+}
+.stateSubTitle {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    color: #454545;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.stateIcon {
+    padding-right: 20px;
+}
+.state-container-card {
+    min-width: 320px;
+    width: 550px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    background: #252525;
+
+}
+.state-container-information {
+
+    background: #252525;
+}
+.state-container-information-left {
+
+}
+.state-container-information-right-red {
+    color: red;
+}
+.state-container-information-right-green {
+    color: green;
+}
+.state-container-information-right-orange {
+    color: orange;
+}
+
+.state-container-information ul {
+    padding-left: 20px;
+ }
+
+ .state-container-information ul li {
+     padding-right: 20px;
+     padding-left: 0px;
+     padding-top: 0px;
+     height: 48px;
+     color: #ffffff;
+     background: #0000000;
+     font-family: Avenir;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 18px;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
