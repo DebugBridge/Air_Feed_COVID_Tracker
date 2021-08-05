@@ -35,7 +35,7 @@ DoD Personnel to make informed travel assessments based on open source updated d
 ### Usage  
 User will be prompted to search for the state or territory they wish to view relevant data for. As the user types, matching search results will begin to be displayed in a drop down menu.  
 
-![Main Screen](https://github.com/DebugBridge/Air_Feed_COVID_Tracker/blob/main/Frame%201%20(1).png?raw=true)
+![Main Screen](https://github.com/DebugBridge/Air_Feed_COVID_Tracker/blob/main/ReadMeSrc/ss2.png?raw=true)
 
 The user can click on a state's name in the menu at any time to view the data for the selected state. After clicking on the state's name, the relevant data will be rendered along with the message, "Why is (STATE_NAME + COLOR) status?". Color corresponds to different statuses of risk in a given state. Color status includes three colors idicating different levels of risk: 
 - Red (high risk)
