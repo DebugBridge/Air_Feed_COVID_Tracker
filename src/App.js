@@ -1,12 +1,27 @@
 import './App.css';
 import Test from './Test.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import TestTwo from './TestTwo.js';
 
 function App() {
   return (
-    <div>
-     <h1>I'm up</h1>
-     <Test />
-    </div>
+    <Router>
+      <div>
+          <Switch>
+       <Route exact path="/">
+            <Test />
+       </Route>
+       <Route path="/state/:index">
+            <TestTwo />
+       </Route>
+     </Switch>
+  </div>
+</Router>
   );
 }
 
