@@ -7,7 +7,7 @@ function Tools() {
     <div className="state-subcontainer">
         <div className="state-label-wrapper">
             <div className="state-label">
-                <div className="stateTitle">Credits</div>
+                <div className="stateTitle">Tools</div>
 
             </div>
         </div>

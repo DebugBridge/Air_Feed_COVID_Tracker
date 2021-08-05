@@ -1,11 +1,19 @@
 import './nav.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+
+
 function Nav() {
+
+  let history = useHistory();
+  const changeUrlBar = (e) => {
+    history.push(`/`);
+   }
+
     return (
 
 <header className="header">
 
-      <a href="" className="logo">Air Feed</a>
+      <a onClick={changeUrlBar} className="logo">Air Feed</a>
 
       <input className="menu-btn" type="checkbox" id="menu-btn" />
       <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
