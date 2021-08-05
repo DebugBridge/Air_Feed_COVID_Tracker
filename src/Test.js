@@ -23,13 +23,15 @@ let Test = () => {
 let onInputListener = (e) => {
   setUserInput(e.target.value)
 }
+
 let history = useHistory();
+
  const changeUrlBar = (e) => {
-   history.push(`/state/:${e.target.id}`)
+   history.push(`/${e.target.id}`)
  }
 return (
   <div>
-  <label for="fname">user typing state of choice:</label>
+  <label for="fname">insert state here:</label>
   <input type="text" id="fname" onInput={onInputListener} name="fname"/>
  {
    dataStorage.map((updatedData, index) => {

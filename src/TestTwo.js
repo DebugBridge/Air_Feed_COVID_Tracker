@@ -4,8 +4,8 @@ import {useState, useEffect} from "react";
 
 
 const TestTwo = () =>  {
-    const { index } = useParams();
-    const [dataBoy, setDataBoy] = useState([])
+    let index = window.location.pathname.slice(1)
+    const [storage, setStorage] = useState([])
 
     useEffect(() => {
         fetch(`https://covid-19-statistics.p.rapidapi.com/reports?&iso=USA`, {
@@ -16,16 +16,18 @@ const TestTwo = () =>  {
         }
       })
       .then(response => response.json())
-      .then(data => setDataBoy(data.data))
-      .then()
+      .then(data => setStorage(data.data))
       .catch(err => console.error(err));
       }, [])
 
 
       return (
-          <div>
-<div> 'Test Two index is:'{index} </div>
-<div>  {dataBoy.toString} </div>
+<div>
+
+<div> 'Test Two index is: </div>
+{storage.length === 0 ? <div>Loading</div> : <div>{storage[index].deaths}</div>}
+
+
 </div>
 )
     }

@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import TestTwo from './TestTwo.js';
+import { useContext } from 'react'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
        <Route exact path="/">
             <Test />
        </Route>
-       <Route path="/state/:index">
+       <Route path="/">
             <TestTwo />
        </Route>
      </Switch>
