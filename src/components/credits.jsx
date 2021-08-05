@@ -2,7 +2,6 @@ import './state.css'
 
 function Credits() {
     return (
-
 <div className="state-container">
     <div className="state-subcontainer">
         <div className="state-label-wrapper">
@@ -17,22 +16,22 @@ function Credits() {
         </div>
         <div className="stateWrapper">
             <div className="state-container-information">
-                <ul>
+                 <ul>
                     <li>
-                        <div className="state-container-information-left">OOSOADASDSASAD:</div>
-                        <div className="state-container-information-right-orange">DSADA</div>
+                        <div className="state-container-information-left">Scott Shannon</div>
+                        <div className="state-container-information-right-orange">@Shannonscotta</div>
                     </li>
                     <li>
-                        <div className="state-container-information-left">OOSOADASDSASAD:</div>
-                        <div className="state-container-information-right-orange">DSADA</div>
+                        <div className="state-container-information-left">Nicholas Schafter</div>
+                        <div className="state-container-information-right-orange">@DebugBridge</div>
                     </li>
                     <li>
-                        <div className="state-container-information-left">OOSOADASDSASAD:</div>
-                        <div className="state-container-information-right-orange">DSADA</div>
+                        <div className="state-container-information-left">Hector Hernandez</div>
+                        <div className="state-container-information-right-orange">@hectorhcuevas</div>
                     </li>
                     <li>
-                        <div className="state-container-information-left">OOSOADASDSASAD:</div>
-                        <div className="state-container-information-right-orange">DSADA</div>
+                        <div className="state-container-information-left">Oleg Kuftyrev</div>
+                        <div className="state-container-information-right-orange">@raynwinter</div>
                     </li>
                 </ul>
             </div>

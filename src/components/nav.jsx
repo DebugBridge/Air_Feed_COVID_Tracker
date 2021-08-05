@@ -1,5 +1,5 @@
 import './nav.css';
-
+import { Link } from 'react-router-dom';
 function Nav() {
     return (
 
@@ -11,12 +11,12 @@ function Nav() {
       <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
 
         <ul className="menu">
-          <li><a href="#authors">Authors</a></li>
-          <li><a href="#credits">Credits</a></li>
+          <li><Link to="credits">Credits</Link></li>
+          <li><Link to="/tools">Tools</Link></li>
         </ul>
 
 </header>
     );
   }
-  
+
   export default Nav;

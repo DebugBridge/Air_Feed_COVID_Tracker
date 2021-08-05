@@ -21,6 +21,7 @@ import Home from './components/home';
 import State from './components/state';
 import Helper from './components/Helper';
 import Credits from './components/credits'
+import Tools from './components/tools'
 
 function App() {
 
@@ -33,9 +34,9 @@ function App() {
                   <span className="logo">Air Feed</span>
                 </div>
               <Switch>
-                {/* <Route exact path="/authors">
-                  <Authors/>
-                </Route> */}
+                <Route exact path="/tools">
+                  <Tools/>
+                </Route>
                 <Route exact path="/credits">
                   <Credits/>
                 </Route>
