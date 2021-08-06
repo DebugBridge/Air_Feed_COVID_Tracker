@@ -1,19 +1,16 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+
 import {useState} from 'react';
 
 import Home from './home';
 import State from './state';
 import Slider from './slider';
 
-let Helper = () =>{
-
+//enables the application to only display the slider on either home or state
+const Helper = () =>{
+  // enables us force a re-render. holds no data
   const [,setReRender] = useState();
-
+  //re-render function to be passed to slider to enable this component to refresh
   let reRenderFunc = () => {
     setReRender({})
   }
