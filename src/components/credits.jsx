@@ -27,7 +27,7 @@ const Credits = () => {
                  <ul>
                     <li>
                         <div className="state-container-information-left">Scott Shannon</div>
-                        <div className="state-container-information-right">@Shannonscotta</div>
+                        <div className="state-container-information-right">@shannonscotta</div>
                     </li>
                     <li>
                         <div className="state-container-information-left">Nicholas Schafter</div>
