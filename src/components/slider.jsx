@@ -27,7 +27,7 @@ const Slider = ({reRender}) => {
 
 //helper func to set the user input state with a event val
 let onInputListener = (e) => {
-  setUserInput(e.target.value)
+  setUserInput(e.target.value);
 }
 //stores the useHist func to prevent react error
 let history = useHistory();
