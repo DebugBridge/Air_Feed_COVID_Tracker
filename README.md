@@ -27,7 +27,9 @@ DoD Personnel to make informed travel assessments based on open source updated d
 
 ### Installation
 - npm install  
-- npm install cypress --dev  
+- npm install cypress --dev
+- npm start
+- cypress open
 
 
 <!-- Usage - Further details on how the project is meant to be used may be helpful. For a library or framework, this section would outline how to use the library within another project (see socket.io  ). For a service that is meant to be used within a larger project architecture, instructions on how to integrate may be necessary (see node-statsD  ). -->
