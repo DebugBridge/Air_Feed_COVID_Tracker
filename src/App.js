@@ -3,8 +3,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 // Component imports
@@ -13,7 +12,7 @@ import Helper from './components/Helper';
 import Credits from './components/credits'
 import Tools from './components/tools'
 
-function App() {
+const App = () => {
 
   return (
 

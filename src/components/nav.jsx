@@ -1,10 +1,11 @@
 import './nav.css';
 import { Link, useHistory } from 'react-router-dom';
 
-
-function Nav() {
-
+// nav bar
+const Nav = () => {
+//stores useHistory func to prevent error with react
   let history = useHistory();
+  //changes the address bar to "/"
   const changeUrlBar = (e) => {
     history.push(`/`);
    }
@@ -12,14 +13,14 @@ function Nav() {
     return (
 
 <header className="header">
-
-      <a onClick={changeUrlBar} className="logo">Air Feed</a>
+      {/* logo on click invokes changeUrlBar */}
+      <a onClick={changeUrlBar} href="/" className="logo">Air Feed</a>
 
       <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
+      <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
 
         <ul className="menu">
-          <li><Link to="credits">Credits</Link></li>
+          <li><Link to="/credits">Credits</Link></li>
           <li><Link to="/tools">Tools</Link></li>
         </ul>
 
