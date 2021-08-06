@@ -7,19 +7,22 @@ describe("my first test", () => {
     });
     //write a test that confirms correct search result is returned
     it("Gives correct search result for washington", () => {
-        cy.get('[data-cy="search-input"]')
+
+        //cy.get('[data-cy="slider"]').trigger('mouseover')
+
+        cy.get('[data-cy="search-input"]').click({force: true})
             .as('input')
 
         cy.get('@input')
             .type('washington')
 
-        cy.get('[data-cy="search-result"]')
+        cy.get('[data-cy="search-result"]').click({force: true})
             .as('result')
 
         cy.get('@result')
             .invoke('text').should('equal', 'Washington')
 
-        cy.get('@result').click()
+        cy.get('@result').click({force: true})
 
         cy.url().should('eq', 'http://localhost:3000/0')
 
@@ -29,19 +32,19 @@ describe("my first test", () => {
 
 
     it("Gives correct search result for Texas with random capital letters", () => {
-        cy.get('[data-cy="search-input"]')
+        cy.get('[data-cy="search-input"]').click({force: true})
             .as('input')
 
         cy.get('@input')
             .type('tExAs')
 
-        cy.get('[data-cy="search-result"]')
+        cy.get('[data-cy="search-result"]').click({force: true})
             .as('result')
 
         cy.get('@result')
             .invoke('text').should('equal', 'Texas')
 
-        cy.get('@result').click()
+        cy.get('@result').click({force: true})
 
         cy.url().should('eq', 'http://localhost:3000/13')
 
@@ -50,19 +53,19 @@ describe("my first test", () => {
     })
 
     it("Gives correct data for New jersey", () => {
-        cy.get('[data-cy="search-input"]')
+        cy.get('[data-cy="search-input"]').click({force: true})
             .as('input')
 
         cy.get('@input')
             .type('nEW jeR')
 
-        cy.get('[data-cy="search-result"]')
+        cy.get('[data-cy="search-result"]').click({force: true})
             .as('result')
 
         cy.get('@result')
             .invoke('text').should('equal', 'New Jersey')
 
-        cy.get('@result').click()
+        cy.get('@result').click({force: true})
 
         cy.url().should('eq', 'http://localhost:3000/11')
 

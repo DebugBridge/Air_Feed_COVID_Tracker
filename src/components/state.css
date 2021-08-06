@@ -33,8 +33,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
-    min-width: 320px;
-    width: 550px;
+    min-width: 100%;
     padding-left: 20px;
 }
 .stateSubTitle {
@@ -47,11 +46,8 @@
     padding-bottom: 20px;
 }
 .stateIcon {
-    padding-right: 20px;
 }
 .state-container-card {
-    min-width: 320px;
-    width: 550px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -64,7 +60,7 @@
 
 }
 .state-container-information {
-
+    min-width: 320px;
     background: #252525;
 }
 .state-container-information-left {
@@ -100,3 +96,11 @@
      flex-direction: row;
      justify-content: space-between;
  }
+
+
+ @media (min-width: 48em) {
+    .state-container-information {
+        min-width: 600px;
+        background: #252525;
+    }
+  }

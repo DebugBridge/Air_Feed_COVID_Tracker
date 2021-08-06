@@ -57,7 +57,7 @@ return (
     if (updatedData.region.province.toUpperCase().indexOf(userInput.toUpperCase()) === 0) {
       return (
        <li >
-             <div id={index} onClick={changeUrlBar} className="litext">{updatedData.region.province}</div>
+             <div data-cy="search-result" id={index} onClick={changeUrlBar} className="litext">{updatedData.region.province}</div>
              <div>
              {dataStorage.length !== 0 && dataStorage[index].fatality_rate >= .02 ? <>
 
