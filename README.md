@@ -26,9 +26,10 @@ DoD Personnel to make informed travel assessments based on open source updated d
 <!-- Installation - How can another developer get your project up and running on their own? What dependencies are required? Are there environmental requirements? Be specific, and outline steps to take in order to get the project running. -->
 
 ### Installation
-- npm install
+- npm install  
 - npm install cypress --dev
-
+- npm start
+- cypress open
 
 <!-- Usage - Further details on how the project is meant to be used may be helpful. For a library or framework, this section would outline how to use the library within another project (see socket.io  ). For a service that is meant to be used within a larger project architecture, instructions on how to integrate may be necessary (see node-statsD  ). -->
 
